@@ -114,7 +114,7 @@ class VllmQwen:
             for obj in self.hybrid_vector_search(query,total_results=2).points:
                 print(obj,end="\n\n")
                 all_context.append(obj.payload.get('summary',''))
-            user_prompt = all_context
+            user_prompt = f"User Query-- {query} \n\n CONTEXT\n\n {all_context}"
             res_text = self.generate_text(system_prompt,
                                         user_prompt,
                                         self.llm_tok,
