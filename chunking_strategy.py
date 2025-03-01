@@ -40,7 +40,7 @@ class ChunkingStrategy:
         return int(fname.split('_')[-1])
 
     def get_file_context(self,fname):
-        fp = os.apth.join(self.text_file_path,fname)#f'/kaggle/input/gov-land-records/output (2)/{fname}'
+        fp = os.path.join(self.text_file_path,fname)#f'/kaggle/input/gov-land-records/output (2)/{fname}'
         with open(fp, encoding='utf-8') as f:
             return ''.join(f.readlines())
     

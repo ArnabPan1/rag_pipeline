@@ -60,7 +60,7 @@ class VllmQwen:
         
         dense_vector = self.embed.get_embedding(input_texts=[query,],
                                             model=dense_model,
-                                            tokenizer=dense_tokenizer)()[0]
+                                            tokenizer=dense_tokenizer)[0]
         
         return {"sparse_vector":{"indices":sparse_indices,
                                 "values":sparse_scores},

@@ -9,7 +9,7 @@ from typing import List
 class QuadRantPipe:
     def __init__(self):
         self.collection_name = "govt_land_data"
-        self.emb_dimentions = 798
+        self.emb_dimentions = 768
         self.client = None
         self.create_qudarant_config()
     
@@ -51,7 +51,7 @@ class QuadRantPipe:
         self.client.upsert(collection_name=self.collection_name,
                 points = Points)
         print("Uploading Done, Total No of chunks\n---")
-        print(self.client.count(collection_name='govt_land'))
+        print(self.client.count(collection_name=self.collection_name))
     
 
 
