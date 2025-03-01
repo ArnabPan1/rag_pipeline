@@ -19,7 +19,7 @@ class VllmQwen:
 
         return llm_tokenizer,llm
     
-    def generate_text(system_prompt,user_prompt,llm_tokenizer,llm):
+    def generate_text(self,system_prompt,user_prompt,llm_tokenizer,llm):
         all_text = []
         sampling_params = SamplingParams(temperature=0.7, 
                                          top_p=0.8, 
