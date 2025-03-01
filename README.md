@@ -4,10 +4,10 @@
 
 ## Features
 
-# Text Extraction: Uses PaddleOCR to extract text from PDF documents.
+Text Extraction: Uses PaddleOCR to extract text from PDF documents.
 
-# Vector Search: Stores embeddings in Qdrant for fast and scalable retrieval.
+Vector Search: Stores embeddings in Qdrant for fast and scalable retrieval.
 
-# Hybrid Search: Combines keyword-based and vector search for better relevance.
+Hybrid Search: Combines keyword-based and vector search for better relevance.
 
-# LLM-powered Responses: Uses Qwen2.5-0.5B-Instruct with vLLM for inference.
+LLM-powered Responses: Uses Qwen2.5-0.5B-Instruct with vLLM for inference.
